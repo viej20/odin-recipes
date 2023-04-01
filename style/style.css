@@ -1,9 +1,40 @@
+/* 
+GROUPING SELECTORS
+x, y = applies to both 
+
+CHAINING SELECTORS
+x.y = applies to elements that have both x & y
+
+DESCENDENT SELECTORS
+x y = applies to element y if it is a child of element x 
+*/
+
 body{
     background-color: rgb(235, 219, 195);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
+h1{
+    text-align: center;
+}
+
+img.proportions, .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.proportions{ 
     height: 400px;
     width: auto;
+}
+
+.center{
+    text-align: center;
+    width: 50%;
+}
+
+.border{
+    border: 5px solid rgb(25, 107, 43);
+    border-radius: 5%;
 }
